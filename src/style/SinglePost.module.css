@@ -1,0 +1,175 @@
+.container {
+  background: white;
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.infoAccount {
+  display: flex;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.infoAccount img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.usernLocat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.usernLocat h4 {
+  margin-top: 10px;
+  height: 0px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.usernLocat p {
+  margin-top: -3px;
+  font-size: 12px;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.imgPost img {
+  height: 450px;
+  width: 100%;
+}
+
+.fontAwesomeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fontAwesomeContainerLeft ul {
+  display: flex;
+  list-style: none;
+  margin-left: -30px;
+  margin-top: 5px;
+}
+
+.fontAwesomeContainerLeft ul li {
+  padding-right: 10px;
+}
+.fontAwesomeContainerLeft ul li:hover {
+  cursor: pointer;
+}
+
+#heartPost {
+  height: 24px;
+}
+
+#commentPost {
+  width: 34px;
+}
+
+#planePost {
+  width: 34px;
+}
+
+#savePost {
+  width: 28px;
+  cursor: pointer;
+}
+
+.fontAwesomeContainerRight {
+  margin-right: 10px;
+  margin-top: -9px;
+}
+
+#description span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#description {
+  font-size: 14px;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.likeContainer {
+  display: flex;
+  align-items: center;
+  margin-top: -20px;
+  margin-left: 10px;
+}
+.likeContainer img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.likeContainer p {
+  font-size: 14px;
+}
+
+.likeContainer span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#showComments {
+  font-size: 14px;
+  color: #999999;
+  margin-left: 10px;
+  margin-top: -2px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addComments {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #efefef;
+  margin-top: 15px;
+}
+
+.addCommentsLeft {
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.addCommentsLeft img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.addCommentsLeft p {
+  font-size: 14px;
+  color: #8e8e8e;
+  font-weight: 600;
+}
+
+.addCommentsRight {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.addCommentsRight p {
+  color: #0095f6;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+}

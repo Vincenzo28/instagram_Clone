@@ -1,0 +1,238 @@
+.allContainer{
+  background: #fafafa;
+  height: 820px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.leftContainer {
+  padding-top: 30px;
+  margin-right: 20px;
+}
+.phoneImages {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  left: 48px;
+  top: 183px;
+}
+.phoneImages img {
+  animation-name: switch;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-duration: 16s;
+}
+.phones img {
+  position: relative;
+  width: 400px;
+}
+.image {
+  width: 255px;
+  height: 547px;
+}
+@keyframes switch {
+  0% {
+    opacity: 1;
+  }
+  17% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#image1 {
+  animation-delay: 0s;
+  position: absolute;
+  bottom: 210px;
+}
+#image2 {
+  animation-delay: 4s;
+  position: absolute;
+  bottom: 210px;
+}
+#image3 {
+  animation-delay: 8s;
+  position: absolute;
+  bottom: 210px;
+}
+#image4 {
+  animation-delay: 12s;
+  position: absolute;
+  bottom: 210px;
+}
+
+.authContainer {
+  background: #ffffff;
+  margin-top: 50px;
+  width: 350px;
+  margin-bottom: 10px;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.authContainer img {
+  width: 180px;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  cursor: pointer;
+}
+.authContainer input {
+  width: 230px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 50px;
+  border: 1px solid #dbdbdb;
+  border-radius: 2px;
+  background: #fafafa;
+}
+
+.authContainer input,
+input::placeholder {
+  color: #8e8e8e;
+  font-size: 12px;
+  font-weight: 540;
+}
+
+.authContainer button {
+  width: 71.5%;
+  padding: 7px;
+  color: white;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.ulList {
+  margin-right: 40px;
+}
+
+.ulList ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+}
+
+.li {
+  border: 1px solid #dbdbdb;
+  height: 0;
+  width: 100px;
+  margin: 15px;
+}
+
+#o {
+  color: #8e8e8e;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logFacebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 10px;
+}
+.logFacebook:hover {
+  cursor: pointer;
+}
+
+.logFacebook img {
+  width: 17px;
+  margin-right: 10px;
+  position: relative;
+  bottom: 10px;
+}
+
+.logFacebook p {
+  font-size: 14px;
+  color: #385185;
+  font-weight: 700;
+}
+
+#forgotPass {
+  font-size: 12px;
+  color: #00376b;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.signUp {
+  background: #ffffff;
+  width: 350px;
+  height: 65px;
+  position: relative;
+  border: 1px solid #dbdbdb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUp p {
+  font-size: 14px;
+}
+.signUp p span {
+  color: #0095f6;
+  font-weight: 700;
+}
+
+/* Media queries */
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width:1024px) {
+  .leftContainer{
+    display: none;
+  }
+  .container{
+    align-items: center;
+    justify-content: center;
+  }
+ 
+}
+
+/* Mobile */
+
+@media (min-width:320px) and (max-width:767px) {
+  .leftContainer{
+    display: none;
+  }
+  .container{
+    align-items: center;
+    justify-content: center;
+  }
+  .authContainer {
+    background: #fafafa;
+    margin-top: 10px;
+    width: 350px;
+    border: none;
+  }
+  .signUp{
+    background: #fafafa;
+    border: none;
+  }
+}

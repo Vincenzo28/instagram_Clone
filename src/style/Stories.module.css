@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  margin-top: 20px;
+  overflow-x: scroll;
+  background: white;
+  border: 1px solid #dbdbdb;
+  padding-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive */
+/* Mobile */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .container{
+    margin-top: -10px;
+    background: #fafafa;
+    margin-bottom: -20px;
+  }
+}

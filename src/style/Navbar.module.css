@@ -1,0 +1,204 @@
+.container {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #dbdbdb;
+  overflow: hidden;
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+}
+
+.logoInsta {
+  margin-top: 12px;
+  margin-right: 100px;
+}
+.logoInsta img {
+  width: 104px;
+}
+.searchBar {
+  margin-left: 120px;
+}
+
+.searchBar form {
+  background: #efefef;
+  border-radius: 8px;
+  padding: 8px;
+}
+.searchBar input {
+  border-radius: 8px;
+  background: #efefef;
+  border: none;
+  padding-left: 10px;
+  width: 220px;
+}
+.searchBar input::placeholder {
+  font-size: 16px;
+  font-weight: 100;
+}
+.searchBar input:focus {
+  outline: none;
+}
+
+.listIcons ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+.listIcons {
+  margin-left: 40px;
+}
+
+.listIcons ul li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+#iconPlane img {
+  width: 33px;
+}
+#iconPlane {
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+#iconCompass {
+  margin-top: 5px;
+}
+#iconCompass img {
+  width: 28px;
+}
+
+#house {
+  height: 22px;
+}
+#iconSquarePlus img {
+  width: 28px;
+}
+
+#iconSquarePlus {
+  margin-top: 5px;
+  cursor: pointer;
+}
+#heart {
+  height: 22px;
+}
+
+#iconPicture img {
+  width: 25px;
+}
+#iconPicture {
+  margin-top: 5px;
+}
+
+.box {
+  position: fixed;
+  z-index: 2;
+  height: 8%;
+  width: 15%;
+  padding-top: 2rem;
+  background: rgb(255, 255, 255);
+  top: 55px;
+  left: 1141px;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+}
+
+.box p {
+  font-size: 14px;
+}
+.box p span {
+  margin-left: 5px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 95px;
+  left: 10px;
+  font-size: 30px;
+}
+
+.linkProfile:hover{
+  background: #fafafa;
+}
+
+.linkProfile{
+  display: flex;
+  justify-content: left;
+  padding-left: 15px;
+  margin-top: -30px;
+  cursor: pointer;
+}
+.linkProfile p:link{
+  text-decoration: none !important;
+}
+
+.linkLogOut{
+  display: flex;
+  justify-content: left;
+  padding-left: 20px;
+  margin-top: 10px;
+  border-top: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+.linkLogOut:hover{
+  background: #fafafa;
+}
+
+/* Responsive */
+
+/* Media queries */
+@media (min-width:768px) and (max-width:1024px) {
+  .logoInsta{
+    margin-right: 0px;
+  }
+  .searchBar input{
+    width: 153px;
+    margin-left: 0px;
+  }
+  .listIcons{
+    margin-left: 10px;
+  }
+  .box{
+    left: 650px;
+    width: 20%;
+  }
+}
+
+/* Mobile */
+@media (min-width:320px) and (max-width:767px) {
+  .logoInsta{
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  .logoInsta img{
+    width: 90px;
+  }
+  .searchBar input{
+   display: none;
+  }
+  .searchBar form{
+    background: white;
+    margin-left: -115px;
+  }
+  .listIcons{
+    margin-left: 10px;
+  }
+  .box{
+    left: 330px;
+    width: 20%;
+    height: 12%;
+  }
+  .listIcons{
+    margin-left: -100px;
+  }
+  #iconCompass{
+    display: none;
+  }
+}

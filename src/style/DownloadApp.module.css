@@ -1,0 +1,24 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container p{
+    font-size: 14px;
+}
+
+.storeApp{
+    display: flex;
+}
+
+.storeApp img{
+    width: 148px;
+}
+
+#img2{
+   height: 49px;
+   margin-top: 2px;
+}
+
